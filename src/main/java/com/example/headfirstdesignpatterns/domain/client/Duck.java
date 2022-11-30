@@ -2,13 +2,15 @@ package com.example.headfirstdesignpatterns.domain.client;
 
 import com.example.headfirstdesignpatterns.domain.fly.FlyBehavior;
 import com.example.headfirstdesignpatterns.domain.quack.QuackBehavior;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public abstract class Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    public Duck() {
+    protected Duck() {
     }
 
     public abstract void display();
@@ -22,7 +24,7 @@ public abstract class Duck {
     }
 
     public void swim() {
-        System.out.println("All ducks float, even decoys.");
+        log.info("All ducks float, even decoys.");
     }
 
     public void setFlyBehavior(FlyBehavior fb) {

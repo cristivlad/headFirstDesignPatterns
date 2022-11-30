@@ -2,7 +2,9 @@ package com.example.headfirstdesignpatterns.domain.client;
 
 import com.example.headfirstdesignpatterns.domain.fly.FlyWithWings;
 import com.example.headfirstdesignpatterns.domain.quack.Quack;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class MallardDuck extends Duck {
 
     public MallardDuck() {
@@ -12,6 +14,6 @@ public class MallardDuck extends Duck {
 
     @Override
     public void display() {
-        System.out.println("I'm a real Mallard Duck !");
+        log.info("I'm a real Mallard Duck !");
     }
 }
