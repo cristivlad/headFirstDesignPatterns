@@ -1,4 +1,4 @@
-package com.example.headfirstdesignpatterns.domain.quack;
+package com.example.headfirstdesignpatterns.domain.ducks.quack;
 
 import lombok.extern.slf4j.Slf4j;
 

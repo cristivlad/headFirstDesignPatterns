@@ -1,4 +1,4 @@
-package com.example.headfirstdesignpatterns.domain.fly;
+package com.example.headfirstdesignpatterns.domain.ducks.fly.fly;
 
 import lombok.extern.slf4j.Slf4j;
 

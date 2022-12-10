@@ -1,7 +1,7 @@
-package com.example.headfirstdesignpatterns.domain.client;
+package com.example.headfirstdesignpatterns.domain.ducks.client;
 
-import com.example.headfirstdesignpatterns.domain.fly.FlyBehavior;
-import com.example.headfirstdesignpatterns.domain.quack.QuackBehavior;
+import com.example.headfirstdesignpatterns.domain.ducks.fly.fly.FlyBehavior;
+import com.example.headfirstdesignpatterns.domain.ducks.quack.QuackBehavior;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

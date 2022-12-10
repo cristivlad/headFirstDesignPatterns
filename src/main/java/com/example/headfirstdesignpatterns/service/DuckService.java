@@ -1,9 +1,9 @@
 package com.example.headfirstdesignpatterns.service;
 
-import com.example.headfirstdesignpatterns.domain.client.Duck;
-import com.example.headfirstdesignpatterns.domain.fly.FlyRocketPowered;
-import com.example.headfirstdesignpatterns.domain.client.MallardDuck;
-import com.example.headfirstdesignpatterns.domain.client.ModelDuck;
+import com.example.headfirstdesignpatterns.domain.ducks.client.Duck;
+import com.example.headfirstdesignpatterns.domain.ducks.fly.fly.FlyRocketPowered;
+import com.example.headfirstdesignpatterns.domain.ducks.client.MallardDuck;
+import com.example.headfirstdesignpatterns.domain.ducks.client.ModelDuck;
 import org.springframework.stereotype.Service;
 
 @Service
