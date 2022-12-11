@@ -19,4 +19,10 @@ public class PizzaStoreController {
         pizzaStoreService.getPizza();
         return new ResponseEntity<>(OK);
     }
+
+    @GetMapping("/abstract-pizza")
+    public ResponseEntity<Void> getAbstractPizza() {
+        pizzaStoreService.getAbstractPizza();
+        return new ResponseEntity<>(OK);
+    }
 }
