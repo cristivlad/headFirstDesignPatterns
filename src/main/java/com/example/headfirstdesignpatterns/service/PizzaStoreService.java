@@ -17,6 +17,9 @@ public class PizzaStoreService {
     private static final String ETHAN_ORDER = "Ethan ordered a ";
     private static final String JOEL_ORDER = "Joel ordered a ";
 
+    /**
+     * Factory pattern
+     */
     public void getPizza() {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
@@ -46,6 +49,9 @@ public class PizzaStoreService {
         log.info(JOEL_ORDER + pizza.getName() + "\n");
     }
 
+    /**
+     * Abstract Factory pattern
+     */
     public void getAbstractPizza() {
         AbstractPizzaStore nyStore = new AbstractNYPizzaStore();
         AbstractPizzaStore chicagoStore = new AbstractChicagoPizzaStore();

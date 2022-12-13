@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class DuckService {
+
+    /**
+     * Strategy pattern
+     */
     public void getDuck() {
         Duck mallard = new MallardDuck();
         mallard.performQuack();

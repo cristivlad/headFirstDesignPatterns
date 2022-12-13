@@ -19,6 +19,10 @@ import java.io.InputStream;
 @Service
 @Slf4j
 public class StarbuzzService {
+
+    /**
+     * Decorator pattern
+     */
     public void getCoffee() {
         Beverage beverage = new Espresso();
         log.info(beverage.getDescription() + " $" + beverage.cost());
