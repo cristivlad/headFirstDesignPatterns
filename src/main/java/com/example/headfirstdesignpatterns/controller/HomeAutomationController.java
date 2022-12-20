@@ -11,8 +11,14 @@ public class HomeAutomationController {
 
     private final HomeAutomationService service;
 
-    @GetMapping("/remote")
+    @GetMapping("/simple-remote")
     public void getRemoteInfo() {
-        service.getRemoteInfo();
+        service.getSimpleRemoteInfo();
     }
+
+    @GetMapping("/remote")
+    public void getRemote() { service.getRemoteInfo();}
+
+    @GetMapping("/remote-lambda")
+    public void getRemoteLambda() { service.getRemoteInfoLambda();}
 }

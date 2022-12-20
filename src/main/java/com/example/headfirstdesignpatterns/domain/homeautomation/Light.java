@@ -5,11 +5,17 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Light {
 
+    private String location;
+
+    public Light(String location) {
+        this.location = location;
+    }
+
     public void on() {
-        log.info("Light is on!");
+        log.info(location + " Light is on!");
     }
 
     public void off() {
-        log.info("Light is off!");
+        log.info(location + " Light is off!");
     }
 }
