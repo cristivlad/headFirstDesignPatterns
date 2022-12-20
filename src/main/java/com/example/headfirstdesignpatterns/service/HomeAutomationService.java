@@ -71,15 +71,15 @@ public class HomeAutomationService {
         GarageDoor garageDoor = new GarageDoor();
         Stereo stereo = new Stereo("Living Room");
 
-        remoteControl.setCommand(0, livingRoomLight::on, livingRoomLight::off);
-        remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
-        remoteControl.setCommand(2, livingRoomCeilingFan::high, livingRoomCeilingFan::off);
-
-        Command stereoOnWithCd = () -> { stereo.on(); stereo.setCd(); stereo.setVolume(11);};
-        remoteControl.setCommand(3, stereoOnWithCd, stereo::off);
-        remoteControl.setCommand(4, garageDoor::up, garageDoor::down);
-
-        log.info(String.valueOf(remoteControl));
+//        remoteControl.setCommand(0, livingRoomLight::on, livingRoomLight::off);
+//        remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
+//        remoteControl.setCommand(2, livingRoomCeilingFan::high, livingRoomCeilingFan::off);
+//
+//        Command stereoOnWithCd = () -> { stereo.on(); stereo.setCd(); stereo.setVolume(11);};
+//        remoteControl.setCommand(3, stereoOnWithCd, stereo::off);
+//        remoteControl.setCommand(4, garageDoor::up, garageDoor::down);
+//
+//        log.info(String.valueOf(remoteControl));
 
         remoteControl.onButtonWasPressed(0);
         remoteControl.offButtonWasPressed(0);

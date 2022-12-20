@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 public class RemoteControl {
     private final Command[] onCommands;
     private final Command[] offCommands;
+    private Command undoCommand;
 
     public RemoteControl() {
         onCommands = new Command[7];
@@ -16,6 +17,7 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -26,10 +28,12 @@ public class RemoteControl {
     public void onButtonWasPressed(int slot) {
         if (onCommands[slot] != null)
             onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
 
     public void offButtonWasPressed(int slot) {
         offCommands[slot].execute();
+        undoCommand = offCommands[slot];
     }
 
     @Override
